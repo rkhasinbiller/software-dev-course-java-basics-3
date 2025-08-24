@@ -2,24 +2,31 @@ package org.example;
 
 public class ConditionalExercises {
     public boolean lessThanFive(int x) {
-        // Replace the line below with code that returns true if x is less than 5, and false otherwise
-        // (use an if statement with an else block.)
-        return false;
-    }
+        if (x < 5) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
 
-    public String getAgeGroup(int age) {
-        // Replace the line below with code that returns "child" if age is less than 13,
-        // "teen" if age is less than 20, and "adult" otherwise
-        // (use if, else if, and else)
-        return "";
-    }
+        }
 
-    public boolean isValidPassword(String password) {
-        int passwordLength = password.length();
+    public void getAgeGroup(int age) {
+       if (age < 13) {
+           System.out.println("You are a child.");
+       } else if(age < 20){
+                System.out.println("You are a teen");
+            }else {
+                System.out.println("You are an adult");
+                   }
+        }
 
-        // Replace the line below with code that returns true if password is at least 8 characters long
-        // and false otherwise
-        // (use an if statement with an else block.)
-        return false;
-    }
-}
+
+    public void isValidPassword(String password){
+            if (password.length() >= 8) {
+                System.out.println("true");
+
+            } else {
+                System.out.println("false");
+            }
+
+
+        }
